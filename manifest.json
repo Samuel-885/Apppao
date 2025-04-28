@@ -1,0 +1,21 @@
+{
+    "name": "Galera do Pão",
+    "short_name": "Pão",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#181F33",
+    "theme_color": "#AECE6B",
+    "icons": [
+      {
+        "src": "pao.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "pao.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
