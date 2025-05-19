@@ -1,11 +1,11 @@
 const teams = {
-    "Admnistração": ["Jhully", "Fernanda", "Jaquelaira", "Gislaine", "Ana Beatriz",],
+    "Admnistração": ["Jhully", "Fernanda", "Jaquelaira", "Gislaine", "Ana Beatriz"],
     "Designers": ["Artur", "Procópio", "Pamela"],
     "Social medias": ["Tainara", "Evelin", "Ranielle","Mariana"],
     "SEO": ["Guilherme", "Micael"],
-    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas"],
+    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André"],
     "W3V": ["Fred", "Larissa", "Letícia", "Alice", "Sabrina", "Vanessa"],
-    "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro" ],
+    "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro"],
     "PodCast": ["Eli", "Victor", "Vinicius"],
 };
 
