@@ -3,7 +3,7 @@ const teams = {
     "Designers": ["Artur", "Procópio", "Pamela"],
     "Social medias": ["Tainara", "Evelin", "Ranielle","Mariana"],
     "SEO": ["Guilherme", "Micael"],
-    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André",],
+    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas"],
     "W3V": ["Fred", "Larissa", "Letícia", "Alice", "Sabrina", "Vanessa"],
     "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro" ],
     "PodCast": ["Eli", "Victor", "Vinicius"],
