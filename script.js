@@ -1,6 +1,6 @@
 const teams = {
     "Admnistração": ["Jhully", "Fernanda", "Jaquelaira", "Gislaine", "Ana Beatriz"],
-    "Designers": ["Artur", "Procópio", "Pamela"],
+    "Designers & Editores": ["Artur", "Procópio", "Pamela", "Lucas"],
     "Social medias": ["Tainara", "Evelin", "Ranielle","Mariana"],
     "SEO": ["Guilherme", "Micael"],
     "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Marcos"],
