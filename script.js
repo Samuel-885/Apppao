@@ -5,7 +5,7 @@ const teams = {
     "SEO": ["Guilherme", "Micael"],
     "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Marcos"],
     "W3V": ["Fred", "Larissa", "Letícia", "Alice", "Sabrina", "Vanessa"],
-    "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro", "Ed"],
+    "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro", "Ed", "Lorrayne" ],
     "PodCast": ["Eli", "Victor", "Vinicius"],
 };
 
