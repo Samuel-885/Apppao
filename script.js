@@ -4,8 +4,8 @@ const teams = {
     "Social medias": ["Tainara", "Evelin", "Ranielle","Mariana", "Igor"],
     "SEO": ["Guilherme", "Micael"],
     "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Marcos"],
-    "W3V": ["Fred", "Larissa", "Letícia", "Alice", "Sabrina", "Vanessa"],
-    "Allp Fit": ["Rayane", "Júlia", "Juan", "Clara", "Wellen", "Rafaela", "Geovana", "Pedro", "Ed", "Lorrayne" ],
+    "W3V": ["Fred", "Larissa", "Letícia", "Alice"],
+    "Allp Fit": ["Rayane", "Júlia", "Juan", "Wellen", "Rafaela", "Geovana", "Pedro", "Ed", "Sabrina", "Duda", "Ana Clara" ],
     "PodCast": ["Eli", "Victor", "Vinicius"],
 };
 
