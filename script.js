@@ -1,7 +1,7 @@
 const teams = {
-    "Admnistração": ["Jhully", "Fernanda", "Jaquelaira", "Gislaine", "Ana Beatriz", "Taynara"],
-    "Designers & Editores": ["Artur", "Procópio", "Pamela", "Lucas"],
-    "Social medias": ["Tainara", "Evelin", "Ranielle","Mariana", "Igor"],
+    "Admnistração": ["Jhully", "Fernanda", "Gislaine", "Ana Beatriz", "Taynara"],
+    "Designers": ["Artur", "Procópio", "Pamela", "Lucas"],
+    "Social media": ["Tainara", "Evelin", "Ranielle","Mariana", "Igor"],
     "SEO": ["Guilherme", "Micael"],
     "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Marcos"],
     "W3V": ["Fred", "Larissa", "Letícia", "Alice"],
@@ -15,8 +15,20 @@ const selectedW3VMembers = [];
 
 const handleTeamClick = (team) => {
     const membersList = document.getElementById(`members-${team}`);
-    membersList.style.display = membersList.style.display === 'none' ? 'block' : 'none';
+    const teamCard = membersList.parentElement; // pega o card do time
+
+    // alterna a lista
+    const isOpen = membersList.style.display === 'block';
+    membersList.style.display = isOpen ? 'none' : 'block';
+
+    // alterna a classe 'active' para mudar a opacidade
+    if (isOpen) {
+        teamCard.classList.remove('active'); // fecha → volta transparente
+    } else {
+        teamCard.classList.add('active'); // abre → deixa opaco
+    }
 };
+
 
 const handleMemberSelect = (member, checkbox, team) => {
     if (checkbox.checked) {
@@ -70,6 +82,8 @@ const printSelectedMembers = () => {
 
 Object.keys(teams).forEach(team => {
     const teamElement = document.createElement('div');
+    teamElement.classList.add("team-card"); // <<< card estilizado
+
     const teamHeader = document.createElement('h2');
     teamHeader.innerText = team;
     teamHeader.onclick = () => handleTeamClick(team);
@@ -93,6 +107,7 @@ Object.keys(teams).forEach(team => {
 
     teamContainer.appendChild(teamElement);
 });
+
 
 document.getElementById('printButton').onclick = printSelectedMembers;
 

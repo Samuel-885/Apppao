@@ -1,67 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    background-color: #181F33;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
- }
+   font-family: Arial, sans-serif;
+   text-align: center;
+   margin: 0;
+   background-color: #181F33; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
 
- .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.35;
-    object-fit: cover;
- }
+.background-image {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   opacity: 0.35;
+   object-fit: cover;
+}
 
- .container {
-    width: 37rem;
-    text-align: center;
-    padding: 15px;
-    z-index: 2;
-    position: relative;
- }
+.container {
+   width: 100%;
+   max-width: 900px;
+   text-align: center;
+   padding: 15px;
+   z-index: 2;
+   position: relative;
+}
 
- .team-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- }
+.team-list {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+   gap: 20px;
+   align-items: start; /* <<< cada card mantém sua própria altura */
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
 
- .team-list h2 {
-    cursor: pointer;
-    color: aliceblue;
-    text-decoration: none;
- }
+.team-card {
+   background: rgba(34, 42, 69, 0.5); /* transparente por padrão */
+   border-radius: 12px;
+   padding: 15px;
+   text-align: center;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+   cursor: pointer;
+   transition: transform 0.2s ease, background-color 0.2s ease;
+}
 
- .team-list ul {
-    font-size: 21px;
-    list-style-type: none;
-    padding-left: 0;
-    color: rgb(255, 255, 255);
- }
+.team-card.active {
+   background: rgba(34, 42, 69, 1); /* opaco quando ativo */
+}
 
- .team-list li {
-    display: flex;
-    margin: 5px 0;
- }
 
- button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #AECE6B;
-    border: none;
-    border-radius: 5px;
-    height: 3rem;
-    width: 12rem;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
- }
+.team-card h2 {
+   cursor: pointer;
+   color: #AECE6B;
+   font-size: 20px;
+   margin: 0;
+   
+}
+
+.team-card ul {
+   font-size: 16px;
+   list-style-type: none;
+   padding-left: 10px;
+   margin-top: 10px;
+   color: #fff;
+   display: none; /* começa fechado */
+   
+}
+
+.team-card ul li {
+   margin: 5px 0;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: #AECE6B;
+   border: none;
+   border-radius: 5px;
+   height: 3rem;
+   width: 12rem;
+   font-weight: 600;
+   font-family: Arial, Helvetica, sans-serif;
+}
