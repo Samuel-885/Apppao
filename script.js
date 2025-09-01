@@ -1,11 +1,11 @@
 const teams = {
-    "Admnistração": ["Jhully", "Fernanda", "Gislaine", "Ana Beatriz", "Taynara"],
+    "Admnistração": ["Fernanda", "Gislaine", "Ana Beatriz", "Taynara"],
     "Designers": ["Artur", "Procópio", "Pamela", "Lucas"],
-    "Social media": ["Tainara", "Evelin", "Ranielle","Mariana", "Igor"],
+    "Social media": ["Tainara", "Evelin", "Ranielle","Mariana"],
     "SEO": ["Guilherme", "Micael"],
-    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Marcos"],
+    "Tráfego Pago": ["Samuel", "Leandro", "Agatha", "Lucas", "André", "Alex"],
     "W3V": ["Fred", "Larissa", "Letícia", "Alice"],
-    "Allp Fit": ["Rayane", "Júlia", "Juan", "Wellen", "Rafaela", "Geovana", "Ed", "Sabrina", "Duda", "Ana Clara" ],
+    "Allp Fit": ["Rayane", "Júlia", "Juan", "Wellen", "Rafaela", "Geovana", "Ed", "Sabrina", "Duda", "Ana Clara", "Kissila" ],
     "PodCast": ["Eli", "Victor", "Vinicius"],
 };
 
@@ -15,13 +15,13 @@ const selectedW3VMembers = [];
 
 const handleTeamClick = (team) => {
     const membersList = document.getElementById(`members-${team}`);
-    const teamCard = membersList.parentElement; // pega o card do time
+    const teamCard = membersList.parentElement; 
 
-    // alterna a lista
+    
     const isOpen = membersList.style.display === 'block';
     membersList.style.display = isOpen ? 'none' : 'block';
 
-    // alterna a classe 'active' para mudar a opacidade
+    
     if (isOpen) {
         teamCard.classList.remove('active'); // fecha → volta transparente
     } else {
